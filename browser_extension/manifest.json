@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "MORVIX Content Protection",
+  "version": "0.1.0",
+  "description": "Parent-controlled, local content checks for websites you enable.",
+  "minimum_chrome_version": "116",
+  "permissions": ["storage", "activeTab", "scripting", "alarms"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "MORVIX", "default_popup": "popup.html" }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MORVIX</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="brand"><span class="mark">M</span><div><strong>MORVIX</strong><small>Content protection</small></div><span id="connection" class="status">Checking</span></header>
+    <section id="state" class="card"><p class="muted">Checking local service…</p></section>
+    <section id="site-card" class="card hidden">
+      <div class="card-title">This website</div>
+      <p id="site-name" class="site-name"></p>
+      <p id="site-state" class="muted"></p>
+      <button id="enable-site" class="button primary">Enable protection on this site</button>
+      <p class="footnote">MORVIX can read page text and same-site media only on websites you enable here.</p>
+    </section>
+    <section class="footer-row"><a href="http://127.0.0.1:8000/" target="_blank" rel="noreferrer">Open parent dashboard</a><button id="sync" class="link-button" type="button">Sync now</button></section>
+    <p id="message" role="status" class="message"></p>
+  </main>
+  <script src="api_config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

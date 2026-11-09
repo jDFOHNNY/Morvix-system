@@ -1,0 +1,5 @@
+# Optional local model runtime dependencies used by backend/app/classifiers.py and backend/app/video.py.
+torch
+transformers
+safetensors
+opencv-python-headless
